@@ -20,7 +20,6 @@ export function Days({ info }) {
 
   const Day = new Date(infoDay.date);
   const number = Day.getDay();
-  console.log(days[number + 1]);
 
   return (
     <div className={styles.card}>
