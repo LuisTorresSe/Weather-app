@@ -1,0 +1,9 @@
+.containerApp{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #5b5196;
+    width: 100%;
+    border-radius: 0.5em;
+}

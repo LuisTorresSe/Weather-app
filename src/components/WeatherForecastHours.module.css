@@ -1,0 +1,25 @@
+.HourCard{
+    width: 80%;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: auto;
+    list-style: none;
+    overflow: scroll;
+    padding: 0px;
+    overflow-y: hidden;
+}
+
+.HourCard::-webkit-scrollbar-thumb{
+    width: 8px;
+    background-color: #2e2968;
+    border-radius: 1em;
+}
+
+.HourCard::-webkit-scrollbar{
+    width: 8px;
+    border-radius: 1em;
+}
+
+.listHour{
+ text-align: center;
+}

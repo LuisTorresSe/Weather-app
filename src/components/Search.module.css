@@ -1,0 +1,21 @@
+.form{
+    display: flex;
+    justify-content: center;
+    gap:1em;
+    align-items: center;
+    width:auto;
+    margin: 2em;
+}
+
+.formInput{
+    height: 35px;
+    border-radius: 10px;
+    font-size: 1rem;
+    border: 1px solid white;
+    outline: none;
+    
+}
+.formInput:focus{
+    box-shadow: 0px 0px 10px 12px #9a8cd7;
+    border: 1px solid #9a8cd7;
+}
