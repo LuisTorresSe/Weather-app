@@ -32,8 +32,8 @@ export function Weather({ info }) {
     );
   }
   return (
-    <div>
-      <img src={mundo} alt="mundo" />
+    <div className={styles.containerImg}>
+      <img src={mundo} alt="mundo" className={styles.img} />
     </div>
   );
 }
