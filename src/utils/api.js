@@ -6,5 +6,6 @@ export async function Api(city) {
     `${API}&key=${TOKEN}&q=${city}&days=3&aqi=no&alerts=no`
   );
   const json = await request.json();
+  const a = "asda";
   return json;
 }
