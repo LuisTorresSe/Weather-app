@@ -9,7 +9,12 @@ export function Search({ setinfo }) {
 
   useEffect(() => {
     if (debounce.length !== 0) {
-      Api(debounce).then((res) => setinfo(res));
+      const request = Api(debounce);
+      console.log(request);
+      if (request === undefined) {
+        setinfo("");
+      }
+      setinfo(request);
     } else {
       setinfo("");
     }
