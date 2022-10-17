@@ -8,15 +8,13 @@ export function Search({ setinfo }) {
   const debounce = useDebounce(city, 800);
 
   useEffect(() => {
-    if (debounce.length !== 0) {
+    if (debounce.length !== "") {
       const request = Api(debounce);
       console.log(request);
       if (request === undefined) {
-        setinfo("");
+        return null;
       }
       setinfo(request);
-    } else {
-      setinfo("");
     }
   }, [setinfo, debounce]);
 

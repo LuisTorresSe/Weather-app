@@ -5,7 +5,7 @@ import styles from "./Weather.module.css";
 import mundo from "../assets/mundo.png";
 export function Weather({ info }) {
   console.log(info);
-  if (info.length !== 0) {
+  if (info.length !== 0 && info !== undefined) {
     const info_current = {
       text: info.current.condition.text,
       icon: info.current.condition.icon,
